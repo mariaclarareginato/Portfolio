@@ -34,14 +34,14 @@ Criar um ambiente digital onde:
 **Clone o repositório:**
 
 ```bash
-git clone https://github.com/mariaclarareginato/Portifolio.git
+git clone https://github.com/mariaclarareginato/Portfolio.git
 ```
 
 
 Acesse a pasta do projeto:
 
 ```bash
-cd C:\Users\Windows\Downloads\portifolio
+cd C:\Users\Windows\Downloads\Portfolio/portfolio
 ```
 
 Acesse a pasta app:
