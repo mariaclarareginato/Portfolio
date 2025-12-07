@@ -41,7 +41,7 @@ git clone https://github.com/mariaclarareginato/Portfolio.git
 Acesse a pasta do projeto:
 
 ```bash
-cd C:\Users\Windows\Downloads\portfolio/Portfolio
+cd C:\Users\Windows\Downloads\portfólio/Portfolio
 ```
 
 Inicie o servidor de desenvolvimento:
