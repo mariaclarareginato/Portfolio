@@ -41,7 +41,7 @@ git clone https://github.com/mariaclarareginato/Portfolio.git
 Acesse a pasta do projeto:
 
 ```bash
-cd C:\Users\Windows\Downloads\Portfolio/portfolio
+cd C:\Users\Windows\Downloads\portfolio/Portfolio
 ```
 
 Acesse a pasta app:
