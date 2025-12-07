@@ -44,12 +44,6 @@ Acesse a pasta do projeto:
 cd C:\Users\Windows\Downloads\portfolio/Portfolio
 ```
 
-Acesse a pasta app:
-
-```bash
-cd src/app
-```
-
 Inicie o servidor de desenvolvimento:
 
 ```bash
