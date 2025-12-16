@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "../components/ui/accordion";
 import { Phone, Mail, MapPin, MessageCircle, Sun, Moon } from "lucide-react";
 import { Button } from "../components/ui/button";
@@ -18,7 +18,7 @@ export default function HomePage() {
 
       {/* FOTO + NOME */}
       <div className="flex flex-col items-center">
-        <Image
+        <img
           src="/maria.png"
           alt="Maria Clara Reginato"
           width={160}
