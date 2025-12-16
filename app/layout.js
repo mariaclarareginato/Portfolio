@@ -8,20 +8,20 @@ export const metadata = {
   description: "Trabalhos e habilidades",
 };
 
-export default function RootLayout({children }) {
 
+
+export default function RootLayout({ children }) {
   return (
-    <html lang="pt">
+    <html lang="pt" suppressHydrationWarning>
       <body>
-          <ThemeProvider
+        <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
-          disableTransitionOnChange
         >
-        {children}
+          {children}
         </ThemeProvider>
       </body>
     </html>
-  )
-};
+  );
+}
