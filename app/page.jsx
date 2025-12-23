@@ -11,6 +11,7 @@ import {
   SiHtml5, SiCss3, SiJavascript, SiReact, SiNextdotjs, SiTailwindcss, SiNodedotjs, SiGithub 
 } from "react-icons/si";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "../components/ui/dropdown-menu";
+import { Separator } from "@radix-ui/react-dropdown-menu";
 
 export default function HomePage() {
   const { setTheme } = useTheme();
@@ -43,48 +44,82 @@ export default function HomePage() {
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
-            <DropdownMenuItem onClick={() => setTheme("light")}>Tema claro</DropdownMenuItem>
-            <DropdownMenuItem onClick={() => setTheme("dark")}>Tema escuro</DropdownMenuItem>
-            <DropdownMenuItem onClick={() => setTheme("system")}>Tema do sistema</DropdownMenuItem>
+            <DropdownMenuItem className="text-lg font-semibold" onClick={() => setTheme("light")}>Tema claro</DropdownMenuItem>
+            <DropdownMenuItem className="text-lg font-semibold" onClick={() => setTheme("dark")}>Tema escuro</DropdownMenuItem>
+            <DropdownMenuItem className="text-lg font-semibold" onClick={() => setTheme("system")}>Tema do sistema</DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
 
+      <br></br>
       {/* CONTATOS */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center">
-        <div className="flex items-center gap-2">
-          <Phone className="w-5 h-5" />
-          <span>+55 11 91407-3895</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <MessageCircle className="w-5 h-5" />
-          <span>WhatsApp: +55 11 91407-3895</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <Mail className="w-5 h-5" />
-          <span>mariaclarareginato8@gmail.com</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <MapPin className="w-5 h-5" />
-          <span>São Caetano do Sul, São Paulo, Brasil</span>
-        </div>
-      </div>
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 text-center">
+
+  {/* TELEFONE */}
+  <div className="flex items-center justify-center gap-2">
+    <Phone className="w-5 h-5" />
+    <span className="text-base text-md">
+      +55 11 91407-3895
+    </span>
+  </div>
+
+  {/* EMAIL */}
+  <div className="flex items-center justify-center gap-2">
+    <Mail className="w-5 h-5" />
+    <span className="text-base text-md">
+      mariaclarareginato8@gmail.com
+    </span>
+  </div>
+
+  {/* ENDEREÇO */}
+  <div className="flex items-center justify-center gap-2
+                  sm:col-span-2 lg:col-span-2">
+    <MapPin className="w-5 h-5" />
+    <span className="text-base text-md text-center">
+      São Caetano do Sul, São Paulo, Brasil
+    </span>
+  </div>
+
+</div>
+
 
       {/* IDIOMAS */}
-      <div className="grid grid-cols-3 gap-6 text-center text-4xl">
-  <div>
-    <span className="hover:scale-125 transition-transform rounded-3xl fi fi-br text-5xl"></span>
-  
-    <p className="text-xl m-5">Português</p>
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+
+  {/* TÍTULO */}
+  <h1 className="col-span-1 sm:col-span-2 lg:col-span-3 
+                 text-2xl font-semibold mb-4">
+    Idiomas:
+  </h1>
+
+  {/* PORTUGUÊS */}
+  <div className="flex flex-col items-center">
+    <span className="fi fi-br text-6xl sm:text-7xl 
+                     hover:scale-125 transition-transform duration-300 rounded-2xl"></span>
+   <p className="text-lg mt-4">
+   Português (Nativo)
+   </p>
+
   </div>
-  <div>
-    <span className="hover:scale-125 transition-transform fi fi-us rounded-3xl text-5xl"></span>
-    <p className="text-xl m-5">Inglês</p>
+
+  {/* INGLÊS */}
+  <div className="flex flex-col items-center">
+    <span className="fi fi-us text-6xl sm:text-7xl 
+                     hover:scale-125 transition-transform duration-300 rounded-2xl"></span>
+    <p className="text-lg mt-4">
+      Inglês (Fluente)
+    </p>
   </div>
-  <div>
-    <span className="hover:scale-125 transition-transform fi fi-es rounded-3xl text-5xl"></span>
-    <p className="text-xl m-5">Espanhol</p>
+
+  {/* ESPANHOL */}
+  <div className="flex flex-col items-center">
+    <span className="fi fi-es text-6xl sm:text-7xl 
+                     hover:scale-125 transition-transform duration-300 rounded-2xl"></span>
+    <p className="text-lg mt-4">
+      Espanhol (Básico)
+    </p>
   </div>
+
 </div>
 
 
@@ -94,11 +129,12 @@ export default function HomePage() {
 
         {/* Habilidades */}
         <AccordionItem value="item-1">
-          <AccordionTrigger className="font-bold text-md justify-center">Habilidades</AccordionTrigger>
+          <AccordionTrigger className="font-bold text-xl justify-center">Habilidades</AccordionTrigger>
           <AccordionContent>
             {/* Tecnológicas */}
             <div className="mt-6">
               <h2 className="text-2xl font-bold mb-4">Tecnológicas:</h2>
+              <br></br>
               <div className="grid grid-cols-4 sm:grid-cols-8 gap-6 justify-items-center text-4xl">
                 <SiHtml5 className="text-orange-500 hover:scale-125 transition-transform" />
                 <SiCss3 className="text-blue-600 hover:scale-125 transition-transform" />
@@ -126,7 +162,7 @@ export default function HomePage() {
 
         {/* Projetos */}
         <AccordionItem value="item-2">
-          <AccordionTrigger className="font-bold text-md justify-center">Projetos</AccordionTrigger>
+          <AccordionTrigger className="font-bold text-xl justify-center">Projetos</AccordionTrigger>
           <AccordionContent>
             <h3 className="mb-4 mt-4 text-lg font-semibold">Explore meu GitHub e confira meus projetos</h3>
             <a
@@ -144,6 +180,7 @@ export default function HomePage() {
       </Accordion>
 
       {/* FOOTER */}
+      <Separator></Separator>
       <footer className="text-center mt-10">
         &copy; {new Date().getFullYear()} Todos os direitos reservados.
       </footer>
