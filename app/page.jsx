@@ -5,6 +5,8 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "..
 import { Phone, Mail, MapPin, MessageCircle, Sun, Moon } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { useTheme } from "next-themes";
+import "flag-icons/css/flag-icons.min.css";
+
 import { 
   SiHtml5, SiCss3, SiJavascript, SiReact, SiNextdotjs, SiTailwindcss, SiNodedotjs, SiGithub 
 } from "react-icons/si";
@@ -69,14 +71,23 @@ export default function HomePage() {
       </div>
 
       {/* IDIOMAS */}
-      <div className="text-center">
-        <p className="mb-4 mt-4 font-semibold">Idiomas:</p>
-        <div className="grid grid-cols-3 justify-items-center gap-4">
-          <img src="/idiomas/bra.png" alt="Português" className="w-20 h-10 transition-transform duration-300 hover:scale-125" />
-          <img src="/idiomas/eua.png" alt="Inglês" className="w-20 h-10 transition-transform duration-300 hover:scale-125" />
-          <img src="/idiomas/esp.png" alt="Espanhol" className="w-20 h-10 transition-transform duration-300 hover:scale-125" />
-        </div>
-      </div>
+      <div className="grid grid-cols-3 gap-6 text-center text-4xl">
+  <div>
+    <span className="hover:scale-125 transition-transform rounded-3xl fi fi-br text-5xl"></span>
+  
+    <p className="text-xl m-5">Português</p>
+  </div>
+  <div>
+    <span className="hover:scale-125 transition-transform fi fi-us rounded-3xl text-5xl"></span>
+    <p className="text-xl m-5">Inglês</p>
+  </div>
+  <div>
+    <span className="hover:scale-125 transition-transform fi fi-es rounded-3xl text-5xl"></span>
+    <p className="text-xl m-5">Espanhol</p>
+  </div>
+</div>
+
+
 
       {/* HABILIDADES + PROJETOS */}
       <Accordion type="single" collapsible className="w-full text-center">
