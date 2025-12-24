@@ -1,6 +1,6 @@
 # Portfólio
 <div align="center">
-<img width="738" height="547" alt="image" src="https://github.com/user-attachments/assets/5b93e174-2d87-45a1-9b31-1342b318a6b8" />
+<img width="738" height="624" alt="image" src="https://github.com/user-attachments/assets/911b517e-e9b9-4f41-aec5-ed98eb0cd86e" />
 </div>
 
 ---
