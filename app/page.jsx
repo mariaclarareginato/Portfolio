@@ -59,7 +59,7 @@ export default function HomePage() {
   <div className="flex items-center justify-center gap-2">
     <Phone className="w-5 h-5" />
     <span className="text-base text-md">
-      +55 11 91407-3895
+      +55 11 92607-3895
     </span>
   </div>
 
