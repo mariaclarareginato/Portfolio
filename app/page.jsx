@@ -82,21 +82,23 @@ export default function HomePage() {
 
 </div>
 
-
-      {/* IDIOMAS */}
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
-
-  {/* TÍTULO */}
-  <h1 className="col-span-1 sm:col-span-2 lg:col-span-3 
-                 text-2xl font-semibold mb-4">
+   
+   {/* IDIOMAS */}
+  <div>
+  <h1 className="text-2xl text-center font-semibold mb-8">
     Idiomas:
   </h1>
+  </div>
+
+
+  {/* DISPLAY */}
+  <div className="grid grid-cols-3 lg:grid-cols-3 gap-2 text-center">
 
   {/* PORTUGUÊS */}
   <div className="flex flex-col items-center">
-    <span className="fi fi-br text-6xl sm:text-7xl 
+    <span className="fi fi-br text-3xl 
                      hover:scale-125 transition-transform duration-300 rounded-2xl"></span>
-   <p className="text-lg mt-4">
+   <p className="text-lg mt-2">
    Português (Nativo)
    </p>
 
@@ -104,23 +106,22 @@ export default function HomePage() {
 
   {/* INGLÊS */}
   <div className="flex flex-col items-center">
-    <span className="fi fi-us text-6xl sm:text-7xl 
+    <span className="fi fi-us text-3xl 
                      hover:scale-125 transition-transform duration-300 rounded-2xl"></span>
-    <p className="text-lg mt-4">
+    <p className="text-lg mt-2">
       Inglês (Fluente)
     </p>
   </div>
 
   {/* ESPANHOL */}
   <div className="flex flex-col items-center">
-    <span className="fi fi-es text-6xl sm:text-7xl 
+    <span className="fi fi-es text-3xl 
                      hover:scale-125 transition-transform duration-300 rounded-2xl"></span>
-    <p className="text-lg mt-4">
+    <p className="text-lg mt-2">
       Espanhol (Básico)
     </p>
   </div>
-
-</div>
+  </div>
 
 
 
