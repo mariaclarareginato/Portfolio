@@ -1,6 +1,8 @@
 # Portfólio
 <div align="center">
-<img width="738" height="624" alt="image" src="https://github.com/user-attachments/assets/911b517e-e9b9-4f41-aec5-ed98eb0cd86e" />
+<img width="600" height="430" alt="image" src="https://github.com/user-attachments/assets/5218787b-f9bf-4534-a788-283070bd2cf4"/>
+<img width="600" height="430" alt="Captura de tela 2026-10-25 155226" src="https://github.com/user-attachments/assets/eb5185d5-e7fe-4e9c-a83a-2b9ff28981a8" />
+
 </div>
 
 ---
